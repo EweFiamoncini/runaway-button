@@ -38,15 +38,27 @@ function entrar(){
 sim.addEventListener("click", clicar)
 
 function clicar(){
+    resp.innerHTML ="Eu te amo meu amoooor!!"
+    sim.style.transform="translate(0px)"
+    nao.style.transform="translate(0px, 0px)"
 
-    resp.innerHTML ="Redirecionando para a proxima página..."
-    resp.style.opacity = 1;
-
-    nao.removeEventListener("mouseenter", entrar);
+    resp.style.opacity= 1;
 
     setTimeout(function(){
-
-        window.location.href = "sucess.html"; 
-        
-    }, 2000);
+        resp.style.opacity = 0;
+      }, 3000 )
+    
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const nomePessoa = prompt("Digite o seu nome completo:");
+
+    if (nomePessoa) {
+        const tituloPrincipal = document.querySelector('header h1');
+        tituloPrincipal.textContent = `${nomePessoa}`;
+    } else {
+        const tituloPrincipal = document.querySelector('header h1');
+        tituloPrincipal.textContent = "Olá, Visitante!";
+    }
+});
