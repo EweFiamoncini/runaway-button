@@ -39,14 +39,10 @@ sim.addEventListener("click", clicar)
 
 function clicar(){
 
-    resp.innerHTML ="Redirecionando para a proxima página..."
-    resp.style.opacity = 1;
-
-    nao.removeEventListener("mouseenter", entrar);
+    resp.innerHTML ="Te amo muito! 💖";
+    resp.style.opacity = 1; 
 
     setTimeout(function(){
-
-        window.location.href = "sucess.html"; 
-        
-    }, 2000);
+        resp.style.opacity = 0;
+    }, 3000);
 }
