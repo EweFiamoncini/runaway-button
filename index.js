@@ -39,7 +39,7 @@ sim.addEventListener("click", clicar)
 
 function clicar(){
 
-    resp.innerHTML ="Eu sabia que não ia conseguir.";
+    resp.innerHTML ="Falhou.";
     resp.style.opacity = 1; 
 
     setTimeout(function(){
