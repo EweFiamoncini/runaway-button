@@ -39,7 +39,7 @@ sim.addEventListener("click", clicar)
 
 function clicar(){
 
-    resp.innerHTML ="Te amo muito! 💖";
+    resp.innerHTML ="Eu sabia que não ia conseguir.";
     resp.style.opacity = 1; 
 
     setTimeout(function(){
